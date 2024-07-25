@@ -1,0 +1,22 @@
+Histopathological Image Segmentation for Cancer Classification
+This repository presents a comprehensive solution for histopathological image segmentation aimed at classifying different types of cancer. The project involves preprocessing histopathological images, training a U-Net model for segmentation, and evaluating the results.
+
+Overview
+Data Preparation:
+
+Cancerous Images and Masks: The dataset consists of histopathological images and their corresponding masks that highlight cancerous regions. These are used to train and validate the model.
+Preprocessing:
+
+Gamma Correction: Enhances image contrast and features, which helps in improving the model's ability to learn from the images.
+Encoding: Converts images into a format with 12 classes, each representing different types of cancer or other relevant classifications. This one-hot encoding approach allows the model to differentiate between various classes effectively.
+Model Architecture:
+
+U-Net Segmentation Model: The core of the project is a U-Net model designed for semantic segmentation. It accurately identifies and segments cancerous regions in the images and classifies them into the appropriate categories.
+Training:
+
+Loss Function and Metrics: The model is trained using appropriate loss functions and accuracy metrics to ensure effective learning.
+
+Evaluation and Prediction:
+
+Decoding: After predictions, the output is decoded from the model’s format back to RGB images for visualization. This step maps the segmented regions to the specific cancer types.
+Visualization: Techniques are used to display predictions alongside ground truth masks to evaluate model performance visually.
